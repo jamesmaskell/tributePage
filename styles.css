@@ -1,13 +1,97 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-    font-family: 'Roboto', cursive;
+    font-family: 'Raleway', sans-serif;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+h1, h2 {
+    margin-top: 0;
+    color: #ccc;
 }
 
-header {
-    font-size: 2em;
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3.5vw;
+}
+
+@media screen and (min-width: 769px) {
+    nav, ul, li {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        padding-left: 25px;
+        padding-top: 25px;
+        color: #ccc;
+    }
+
+    li {
+        display: inline;
+        font-weight: bold;
+        padding-right: 25px;
+    }
+
+    #main{
+        position: relative;
+        top: -44px;
+        z-index: -1;
+    }
+
+  #title {
+    height: 100vh;
+    background-position: right;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(splash.jpg);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .splash {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text {
+      padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #title {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .splash {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .text {
+    height: 15vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(179deg, rgba(0,0,0,1) 0%, rgba(67,52,93,1) 100%);
+    padding-left: 5vw;
+    padding-top: 25px;
+  }
+
+  .image {
+    background-position: right;
+    background-size: cover;
+    background-image: url(splash.jpg);
+  }
 }
