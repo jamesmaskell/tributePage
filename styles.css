@@ -20,30 +20,7 @@ h2 {
     font-size: 3.5vw;
 }
 
-#main{
-    position: relative;
-    top: -44px;
-    z-index: -1;
-}
-
 @media screen and (min-width: 769px) {
-    nav, ul, li {
-        padding: 0;
-        margin: 0;
-    }
-
-    ul {
-        padding-left: 25px;
-        padding-top: 25px;
-        color: #ccc;
-    }
-
-    li {
-        display: inline;
-        font-weight: bold;
-        padding-right: 25px;
-    }
-
   #title {
     height: 100vh;
     background-position: right;
@@ -63,13 +40,7 @@ h2 {
   .text {
       padding-left: 50px;
   }
-
-  #menu-button {
-      display:none;
-  }
 }
-
-
 
 @media screen and (max-width: 768px) {
   #title {
@@ -79,36 +50,11 @@ h2 {
     flex-direction: column;
   }
 
-  #menu-button {
-      color: #ccc;
-      font-weight: bold;
-      padding: 25px 0 0 25px;
-  }
-
-  #nav-menu {
-      display: none;
-  }
-
-  #nav-menu li {
-      list-style-type: none;
-      line-height: 2em;
-  }
-
-  #nav-menu:target {
-      display: block;
-      width: 200px;
-      position: fixed;
-      top: 0;
-      background: red;
-      height: 100vh;
-  }
-
   .splash {
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
   .text {
