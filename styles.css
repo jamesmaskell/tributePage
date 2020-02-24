@@ -3,6 +3,11 @@ html, body, p {
   margin: 0;
 }
 
+p {
+    text-align: justify;
+    font-family: sans-serif;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -12,10 +17,36 @@ h1, h2 {
     color: #ccc;
 }
 
+footer {
+    clear: both;
+    width: 100vw;
+    background-color: rgb(12, 10, 24);
+    margin-top: 20px;
+    height: 150px;
+}
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    margin: 0 auto;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-family: sans-serif;
 }
 
 h1 {
@@ -40,6 +71,10 @@ blockquote {
     justify-content: center;
 }
 
+article {
+    padding-right: 25px;
+}
+
 @media screen and (min-width: 769px) {
   #title {
     height: 100vh;
@@ -51,7 +86,8 @@ blockquote {
 
   .container {
       width: 1200px;
-      margin: 0 auto
+      margin: 0 auto;
+      padding-top: 20px;
   }
 
   .splash {
@@ -60,6 +96,11 @@ blockquote {
 
   .text {
       padding-left: 50px;
+  }
+
+  #img-div {
+      float:left;
+      margin-right: 25px;
   }
 }
 
@@ -71,7 +112,11 @@ blockquote {
   }
 
   .splash {
-    height: 50vh;
+    height: 60vh;
+  }
+
+  article {
+      padding-left: 25px;
   }
 
   .container {
@@ -91,4 +136,16 @@ blockquote {
     background-size: cover;
     background-image: url(splash.jpg);
   }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 100%;
+    }
 }
