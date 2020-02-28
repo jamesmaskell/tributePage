@@ -8,8 +8,12 @@ blockquote {
     margin: 0 auto;
 }
 
+.about {
+    background-color: rgb(255,255,255);
+}
+
 .quote {
-  width: 300px;
+  width: 90%;
   border: 2px solid #495c79;
   background-color: #0d0f17;
   position: relative;
@@ -44,25 +48,25 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin-top: 0;
     color: #ccc;
 }
 
-#tributes-section {
-    clear: both;
-    padding: 25px;
-    background-color: rgb(22,34,50);
+h3.dark {
+    color: #000;
 }
 
-#tributes-section h3 {
+#tributes-section {
+    background-color: rgb(22,34,50);
+    clear:both;
     color: #ccc;
 }
+
 
 footer {
     clear: both;
     background-color: rgb(12, 10, 24);
-    margin-top: 20px;
     height: 150px;
 }
 
@@ -74,11 +78,6 @@ img {
     border-radius: 5px;
     border: 1px solid lightgrey;
     margin: 0 auto;
-}
-
-.container {
-    padding-top: 20px;
-    padding-bottom: 60px;
 }
 
 figure {
@@ -144,10 +143,10 @@ article {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(splash.jpg);
   }
 
-  .container {
+  .responsive-container {
       width: 1200px;
       margin: 0 auto;
-      padding-top: 20px;
+
   }
 
   .splash {
@@ -166,6 +165,10 @@ article {
 
 @media screen and (max-width: 768px) {
 
+    .quote {
+      width: 100%;
+  }
+
     .tributes {
         display: flex;
         flex-direction: column;
@@ -178,6 +181,10 @@ article {
     flex-direction: column;
   }
 
+  .column {
+      width: 100%;
+  }
+
   .splash {
     height: 60vh;
   }
@@ -186,7 +193,7 @@ article {
       padding-left: 25px;
   }
 
-  .container {
+  .responsive-container {
       width: 100%;
   }
 
@@ -215,4 +222,9 @@ article {
     .container {
         width: 100%;
     }
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #ccc;
 }
