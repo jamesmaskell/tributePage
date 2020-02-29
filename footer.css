@@ -1,17 +1,17 @@
 footer {
-    background-color: rgb(12, 10, 24);
-}
-
-footer {
     clear: both;
     height: 100%;
-    padding: 20px 0 20px 0;
+    background-color: rgb(12, 10, 24);
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    display: block;
 }
 
 .cover {
     height: 220px;
     transition: all .2s ease-in-out;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.4);
 }
 
 .cover:hover {
@@ -19,9 +19,20 @@ footer {
 }
 
 a, a:hover, a:visited {
-    padding-right: 30px;
+    color: #ccc;
 }
 
-a, a:hover, a:visited {
-    color: #ccc;
+.subset {
+    height:100%;
+}
+
+.subset > p, .james-maskell > p {
+    margin: 0 0 12px 0;
+    font-size: 0.9em;
+}
+
+.subset > a, .james-maskell > a {
+    display:block;
+    margin: 0 0 12px 0;
+    font-size: 0.9em;
 }

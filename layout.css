@@ -9,6 +9,16 @@ p {
     justify-content: center;
 }
 
+@media screen and (min-width: 769px) {
+    .column.left{
+        padding-right: 12.5px;
+    }
+
+    .column.right{
+        padding-left: 12.5px;
+    }
+}
+
 .column.row {
     flex-direction: row;
 }
@@ -34,4 +44,9 @@ figcaption {
         width: 1200px;
         margin: 0 auto;
     }
+}
+
+section {
+    padding-left: 25px;
+    padding-right: 25px;
 }

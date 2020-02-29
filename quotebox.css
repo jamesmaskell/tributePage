@@ -5,13 +5,14 @@ blockquote {
 }
 
 .quote {
-  width: 90%;
+  width: 100%;
   border: 2px solid #495c79;
   background-color: #0d0f17;
   position: relative;
   top: -2px;
   margin-bottom: 25px;
   box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
+  box-sizing:border-box;
 }
 
 .quote-box {
@@ -22,16 +23,11 @@ cite {
   padding: 0 10px 0 10px;
   font-style: normal;
   font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .citation {
   border: 2px solid #495c79;
   background-color: #495c79;
   display: inline-block;
-}
-
-@media screen and (max-width: 768px) {
-    .quote {
-      width: 100%;
-    }
 }

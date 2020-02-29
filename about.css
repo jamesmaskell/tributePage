@@ -1,3 +1,8 @@
+#about {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 #image {
     max-width: 100%;
     height: auto;
@@ -12,10 +17,6 @@ figcaption {
     font-family: sans-serif;
 }
 
-article {
-    padding-right: 25px;
-}
-
 @media screen and (min-width: 769px) {
   #img-div {
       float:left;
@@ -23,8 +24,13 @@ article {
   }
 }
 
+#tribute-info {
+    padding: 0;
+}
+
 @media screen and (max-width: 768px) {
   article {
+      padding-top: 25px;
       padding-left: 25px;
   }
 }
