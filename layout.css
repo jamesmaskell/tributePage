@@ -1,0 +1,37 @@
+p {
+    text-align: justify;
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column.row {
+    flex-direction: row;
+}
+
+figcaption {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+    .responsive-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .responsive-container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

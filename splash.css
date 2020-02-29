@@ -1,0 +1,53 @@
+#title {
+    display: flex;
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 769px) {
+    #title {
+      height: 100vh;
+      flex-direction: row;
+      background-position: right;
+      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(splash.jpg);
+    }
+
+    .splash {
+      width: 50vw;
+    }
+
+    .text {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #title {
+      height: 75vh;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .splash {
+      height: 60vh;
+    }
+
+    .text {
+      height: 15vh;
+      background: rgb(0,0,0);
+      background: linear-gradient(179deg, rgba(0,0,0,1) 0%, rgba(67,52,93,1) 100%);
+      padding-left: 25px;
+      padding-top: 55px;
+    }
+
+    .image {
+      background-position: right;
+      background-size: cover;
+      background-image: url(splash.jpg);
+    }
+}

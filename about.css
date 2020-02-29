@@ -1,0 +1,30 @@
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-family: sans-serif;
+}
+
+article {
+    padding-right: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  #img-div {
+      float:left;
+      margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  article {
+      padding-left: 25px;
+  }
+}
